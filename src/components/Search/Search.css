@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #7DCFB6 30%, #C1EEDD 90%);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #C1EEDD 30%, #7DCFB6 90%);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.form-container {
+    position: absolute;
+    top: 70px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 15px; 
+    max-width: 300px;
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;  
+}
+
+.search-form span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #4a4a4a; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 0.7em;  
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #7DCFB6;
+}
+
+.error {
+    margin-top: 1em;
+    color: red;
+    font-size: 0.9em;
+}
